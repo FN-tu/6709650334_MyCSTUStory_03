@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 .container {
     display: grid;
     grid-template-rows: auto 1fr auto; 
@@ -62,6 +63,9 @@ main {
     
 }
 .content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     grid-area: 2 / 10/ 3/ 13;
     background-color:blanchedalmond
 }
@@ -189,15 +193,59 @@ body {
         border: 1px;
         border-style: solid;
         background-color: #eeeeee;
-        height: 90px;
-        width: 100px;
+        height: 120px;
+        width: 150px;
         transform: rotate(-10deg);
         text-align: center;
       }
       .miniblock2 {
         border: 1px;
         border-style: solid ;
-        height: 80px;
+        height: 100px;
         width: 90%;
         background-color: rgb(137, 215, 137);
       }
+      .block3 {
+        border: 1px;
+        border-style: solid;
+        background-color: #eeeeee;
+        height: 90px;
+        width: 100px;
+        transform: rotate(-10deg);
+        text-align: center;
+      }
+      .miniblock3 {
+        border: 1px;
+        border-style: solid ;
+        width: 100px;
+        background-color: rgb(249, 179, 245);
+      }
+      .image{
+        border: 1px;
+        border-style: solid;
+        background-color: #eeeeee;
+        height: 130px;
+        width: 200px;
+        transform: rotate(10deg);
+        text-align: center;
+      }
+      img {
+        width: 200px;
+      }
+      .video2{
+  border: 1px;
+  border-style: solid;
+  background-color: #eeeeee;
+  height: 130px;
+  width: 150px;
+  transform: rotate(0deg);
+  text-align: center;
+        }
+        .video{
+            filter: brightness(80%);
+            pointer-events: auto;
+          }
+          tr,th,td{
+            font-family: "Chakra Petch", sans-serif;
+            padding: 2px;
+          }
