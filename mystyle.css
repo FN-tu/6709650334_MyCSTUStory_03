@@ -66,6 +66,7 @@ main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    overflow: auto;
     grid-area: 2 / 10/ 3/ 13;
     background-color:blanchedalmond
 }
