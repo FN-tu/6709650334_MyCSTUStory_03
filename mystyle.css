@@ -1,8 +1,9 @@
 .container {
     display: grid;
-    grid-template-rows: 15%  70% 15%; 
+    grid-template-rows: auto 1fr auto; 
     grid-template-columns: repeat(12, 1fr); 
     height: 100vh; 
+    overflow: auto;
 }
 
 header {
@@ -13,16 +14,17 @@ header {
     align-items: center; 
     justify-content: center; 
     text-align: center;
+    padding: 10px;
 }
 header h1{
     margin: 0px;
     padding: 0px;
-    font-size: 4vw;
+    font-size: 30px;
 }
 header p{
     margin: 0px;
     padding: 0px;
-    font-size: 2vw;
+    font-size: 15px;
 }
 
 nav {
@@ -49,8 +51,15 @@ nav ul li a{
 }
 
 main {
+    padding: 10px;
     grid-area: 2 / 4/ 3/ 10;
-    background-color: lightblue;
+    background-image: url(resources/หลัง.jpg);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
 }
 .content{
     grid-area: 2 / 10/ 3/ 13;
@@ -58,7 +67,7 @@ main {
 }
 footer {
     grid-area: 3 / 1/ 4/ 13;
-    background-color: rgb(222, 111, 26);
+    background-color: #ffca1b;
 }
 
 /* สำหรับอุปกรณ์ Tablet */
@@ -72,11 +81,11 @@ header {
 grid-area: 1 / 1/ 2/ 13; 
 }
 header h1 {
-    font-size: 5vw; 
+    font-size: 30px; 
 }
 
 header p {
-    font-size: 2vw; 
+    font-size: 15px; 
 }
 
 
@@ -86,6 +95,9 @@ grid-area:2 / 1/ 3/ 3;
 
 main {
 grid-area: 2/ 3/ 3/ 13;
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
 }
 .content{
 grid-area: 3/ 1/ 4/ 13;
@@ -107,11 +119,11 @@ grid-area: 4/ 1/ 5/ 13;
         grid-area: 1/1/2/2;
     }
     header h1 {
-        font-size: 7vw; 
+        font-size: 30px; 
     }
 
     header p {
-        font-size: 3vw; 
+        font-size: 15px; 
     }
 
     nav {
@@ -153,3 +165,39 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
     }
+
+    .block1 {
+        border: 1px solid; /* เพิ่ม 'solid' ใน border */
+        background-color: #eeeeee;
+        height: 90px; /* ใช้ vh เพื่อให้ความสูงสัมพันธ์กับขนาดหน้าจอ */
+        width: 100px; /* ใช้ vw เพื่อให้ความกว้างสัมพันธ์กับขนาดหน้าจอ */
+        transform: rotate(-10deg);
+        text-align: center;
+        padding: 5px 5px 20px 5px;
+        
+    }
+    
+    .miniblock1 {
+        border: 1px solid; /* เพิ่ม 'solid' ใน border */
+        height: 80px; /* ใช้ vh เพื่อให้ความสูงสัมพันธ์กับขนาดหน้าจอ */
+        width: 90%; /* ใช้ % เพื่อให้ความกว้างสัมพันธ์กับขนาด block1 */
+        background-color: rgb(172, 216, 211);
+        margin: 0 auto; /* ทำให้อยู่กลาง */
+        font-size: 9px;
+    }
+    .block2 {
+        border: 1px;
+        border-style: solid;
+        background-color: #eeeeee;
+        height: 90px;
+        width: 100px;
+        transform: rotate(-10deg);
+        text-align: center;
+      }
+      .miniblock2 {
+        border: 1px;
+        border-style: solid ;
+        height: 80px;
+        width: 90%;
+        background-color: rgb(137, 215, 137);
+      }
